@@ -12,22 +12,24 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .business-card {
-    margin-left: 67%;
+    margin-left: 17%;
     text-align: left;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
 .business-card p {
     color: #1467A6;
     font-family: 'Lato', sans-serif;
-    font-size: 1em;
-    line-height: 8px;
+    font-size: 38px;
+    line-height: 5px;
 }
 
 .main-title {
-    margin: 8%;
+    color: #444545 !important;
+    vertical-align: center;
+    margin-top: 400px;
     margin-bottom: 2%;
-    font-size: 12vw;
+    font-size: 140px;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
 }
@@ -36,16 +38,40 @@ body {
     display: block;
 }
 
+.subheaders {
+    columns: 1;
+    text-align: left;
+}
+
 
 .typer p.type {
     border-right: .03em solid grey;
     margin: 0 auto;
     overflow: auto;
     white-space: no-wrap;
-    max-width: 85%;
+    max-width: 83%;
     animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+    typing 2.5s steps(30, end),
+    blink-caret 1s step-end infinite;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu li {    
+    font-size: 30px;
+    padding-right: 50px;
+    margin-right: 30px;
+}
+
+.menu li:not(.menu-box) {
+    border-right: solid 1px #1467A6;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #525253;
 }
 
 
@@ -65,17 +91,208 @@ body {
     color: #1467A6;
 }
 
-.menu {
-    text-align: center;
-    font-size: 25px;
+.social {
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 50px;
+    margin-left: 17%;
 }
 
-.menu p {
+.social p {
     display: inline;
     padding-right: 30px;
 }
 
-.menu a {
-    color: #1467A6;
+.social a {
+    color: #000;
     text-decoration: none;
 }
+
+.menu {
+    text-align: center;
+}
+
+.menu li {
+    display: inline;
+    font-size: 35px;
+    padding-right: 50px;
+    margin-right: 30px;
+}
+
+.menu li:not(.menu-box) {
+    border-right: solid 1px #1467A6;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #525253;
+}
+
+
+/* Mobile Landscape */
+
+@media only screen  and (orientation: landscape) {
+
+    .main-title {
+        margin-top: 40px;
+        margin-bottom: 0%;
+    }
+
+    .business-card {
+        margin-left: 26%;
+        margin-bottom: 10%;
+        line-height: 5px;
+    }
+
+    .business-card p {
+        font-size: 30px;
+        line-height: 8px;
+    }
+
+
+    .main-title {
+        margin-top: 0px;
+        margin-bottom: 2%;
+        font-size: 100px;
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .typer p.type {
+        border-right: .03em solid grey;
+        margin: 0 auto;
+        overflow: auto;
+        white-space: no-wrap;
+        max-width: 60%;
+        animation: 
+        typing 2.5s steps(30, end),
+        blink-caret 1s step-end infinite;
+    }
+
+    .menu {
+        text-align: center;
+    }
+
+    .menu li {
+        display: inline;
+        font-size: 30px;
+        padding-right: 50px;
+        margin-right: 30px;
+    }
+
+    .menu li:not(.menu-box) {
+        border-right: solid 1px #1467A6;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: #525253;
+    }
+
+    .social {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 4%;
+    }
+
+}
+
+    /* For desktop: */
+@media only screen and (min-width : 992px) {
+
+    .business-card {
+        margin-left: 44%;
+        text-align: left;
+        margin-bottom: 40%;
+    }
+    
+    .business-card p {
+        color: #1467A6;
+        font-family: 'Lato', sans-serif;
+        font-size: 1em;
+        line-height: 7px;
+    }
+    
+    .main-title {
+        margin-top: 100px;
+        margin-bottom: 2%;
+        font-size: 12vw;
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+    }
+    
+    .main-title p , .main-title div {
+        display: block;
+    }
+    
+    
+    .typer p.type {
+        border-right: .03em solid grey;
+        margin: 0 auto;
+        overflow: auto;
+        white-space: no-wrap;
+        max-width: 69%;
+        animation: 
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+    }
+
+
+    .menu {
+        text-align: center;
+    }
+
+    .menu li {
+        display: inline;
+        font-size: 30px;
+        padding-right: 50px;
+        margin-right: 30px;
+    }
+
+    .menu li:not(.menu-box) {
+        border-right: solid 1px #1467A6;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: #525253;
+    }
+
+    
+    /* Animation typing */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: grey }
+      }
+    
+    .curly {
+        color: #1467A6;
+    }
+    
+    .social {
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .social p {
+        display: inline;
+        padding-right: 30px;
+    }
+    
+    .social a {
+        color: #1467A6;
+        text-decoration: none;
+    }
+
+    .subheaders {
+        columns: 2;
+    }
+
+
+  }
