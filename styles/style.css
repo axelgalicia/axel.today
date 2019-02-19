@@ -23,7 +23,6 @@ body {
 }
 
 .business-card {
-    margin-left: 0%;
     text-align: center;
     margin-bottom: 10%;
 }
@@ -31,8 +30,8 @@ body {
 .business-card p {
     color: #1467A6;
     font-family: 'Lato', sans-serif;
-    font-size: 38px;
-    line-height: 4px;
+    font-size: 30px;
+    line-height: 5px;
 }
 
 .main-title {
@@ -70,8 +69,6 @@ body {
     color: #669cc4;
 }
 
-
-
 .personal-name {
     font-weight: bolder;
 }
@@ -96,7 +93,7 @@ body {
 }
 
 .section {
-    margin: 200px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
     border: solid 1px #1467A6;
     padding: 10px 30px 30px 50px;
     border-radius: 10px;
@@ -113,18 +110,6 @@ body {
     text-align: left;
     color: white;
 }
-
-/* Animation typing */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: grey }
-  }
 
 .curly {
     color: #1467A6;
@@ -150,6 +135,7 @@ body {
 
 @media only screen  and (orientation: portrait) {
 
+
     .avatar {
         text-align: center;
         margin-bottom: 1px;
@@ -161,9 +147,13 @@ body {
 
     .business-card p {
         line-height: 5px;
-        font-size: 35px;
+        font-size: 30px;
     }
 
+
+    .first-section {
+        margin-top: 200px;
+    }
 
     .menu li {
         display: block;
@@ -215,12 +205,6 @@ body {
     .main-title {
         margin-top: 40px;
         margin-bottom: 0%;
-    }
-
-    .business-card {
-        margin-left: 0%;
-        margin-bottom: 5%;
-        line-height: 3px;
     }
 
     .business-card p {
@@ -323,7 +307,7 @@ body {
         margin: 0 auto;
         overflow: auto;
         white-space: no-wrap;
-        max-width: 70%;
+        max-width: 64%;
         animation: 
         typing 3.5s steps(30, end),
         blink-caret .5s step-end infinite;
@@ -382,6 +366,10 @@ body {
     .social a {
         color: #1467A6;
         text-decoration: none;
+    }
+
+    .first-section {
+        margin-top: 100px;
     }
 
     .subheaders {
