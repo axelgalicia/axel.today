@@ -7,7 +7,7 @@ Color Palette: https://www.color-hex.com/color/1467a6
   }
 
 .avatar {
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
     margin-bottom: 1px;
 }
@@ -164,6 +164,7 @@ p.position {
     
 
     .avatar {
+        margin-top: 0;
         text-align: center;
         margin-bottom: 1px;
     }
@@ -431,6 +432,5 @@ p.position {
     .desktop {
         display: block;
     }
-
 
   }
