@@ -111,6 +111,18 @@ body {
     color: white;
 }
 
+.space-dot {
+   text-align: center;
+}
+
+.space-dot p {
+    text-align: center;
+    font-size: 140px;
+    padding: 0;
+    margin: 0 auto;
+    color: grey;
+}
+
 .curly {
     color: #1467A6;
 }
@@ -131,10 +143,23 @@ body {
     text-decoration: none;
 }
 
+p.date {
+    font-weight: 50;
+    color: #669cc4;
+}
+
+p.position {
+    color: #e5eef5;
+}
+
+.work-link a {
+    color: #e5eef5;
+    font-size: 13px;
+}
+
 /* Mobile Portrait */
 
-@media only screen  and (orientation: portrait) {
-
+@media only screen  and (orientation: portrait) { 
 
     .avatar {
         text-align: center;
