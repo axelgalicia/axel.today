@@ -9,12 +9,41 @@
 
 <head>
     <title>Axel Today</title>
+
+    <!-- Favicon START-->
+    <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Favicon END-->
+
+    <!-- Fonts START-->
     <link href="/styles/style.css" rel="stylesheet">
+    <!-- Fonts END-->
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto|Lato:300" rel="stylesheet">
+    <!-- Scripts START-->
+    <script src="/js/app.js"></script>
+    <!-- Scripts END-->
 </head>
 
-<body>
+<body onload="reloadOrientation()">
     <header>
+        <div class="avatar">
+            <img src="/images/avatar1.svg" alt="avatar" title="Axel Galicia">
+        </div>
         <div class="main-title">
             <div class="typer">
                 <p class="type">
@@ -27,17 +56,27 @@
     <div class="subheaders">
 
         <div class="business-card">
-            <p>Axel Galicia</p>
+            <p class="personal-name">Axel Galicia</p>
             <p>Software Engineer | Consultant</p>
             <p>axelgalicia@gmail.com</p>
         </div>
 
-        <div class="social">
-            <p><a href="http://github.com/axelgalicia"><img src="/images/github-icon.png" alt="github">Github</a></p>
-            <p><a href="https://www.linkedin.com/in/axelgalicia/"><img src="/images/linkedin-icon.png"
-                        alt="linkedin"></a>
+        <div class="social desktop">
+            <p>
+                <a href="http://github.com/axelgalicia">
+                    <img src="/images/github-icon.png" alt="github" width="32" height="32">
+                </a>
             </p>
-            <!--<p><a href="https://twitter.com/axelgaliciac"><img src="/images/twitter-icon.png" alt="linkedin" width="32" height="32"></a></p>-->
+            <p>
+                <a href="https://www.linkedin.com/in/axelgalicia/">
+                    <img src="/images/linkedin-icon.png" alt="linkedin" width="32" height="32">
+                </a>
+            </p>
+            <p>
+                <a href="https://twitter.com/axelgaliciac">
+                    <img src="/images/twitter-icon.png" alt="linkedin" width="32" height="32">
+                </a>
+            </p>
         </div>
 
     </div>
@@ -52,7 +91,23 @@
         </ul>
     </div>
 
+    <div class="social mobile">
+        <p>
+            <a href="http://github.com/axelgalicia">
+                <img src="/images/github-icon.png" alt="github" width="64" height="64">
+            </a>
+        </p>
+        <p>
+            <a href="https://www.linkedin.com/in/axelgalicia/">
+                <img src="/images/linkedin-icon.png" alt="linkedin" width="64" height="64">
+            </a>
+        </p>
+        <p>
+            <a href="https://twitter.com/axelgaliciac">
+                <img src="/images/twitter-icon.png" alt="linkedin" width="64" height="64">
+            </a>
+        </p>
+    </div>
 
 </body>
-
 </html>

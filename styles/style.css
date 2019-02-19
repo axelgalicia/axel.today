@@ -6,11 +6,22 @@ Color Palette: https://www.color-hex.com/color/1467a6
     box-sizing: border-box;
   }
 
+.avatar {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+.avatar img {
+    height: 500px;
+}
+
 body {
     background-color: #fff;
     padding: 10px;
     font-family: 'Roboto', sans-serif;
 }
+
 .business-card {
     margin-left: 17%;
     text-align: left;
@@ -27,7 +38,7 @@ body {
 .main-title {
     color: #444545 !important;
     vertical-align: center;
-    margin-top: 400px;
+    margin-top: 10px;
     margin-bottom: 2%;
     font-size: 140px;
     text-align: center;
@@ -53,6 +64,10 @@ body {
     animation: 
     typing 2.5s steps(30, end),
     blink-caret 1s step-end infinite;
+}
+
+.personal-name {
+    font-weight: bolder;
 }
 
 .menu {
@@ -92,10 +107,9 @@ body {
 }
 
 .social {
-    text-align: left;
-    font-size: 15px;
+    text-align: center;
+    margin-top: 100px;
     margin-bottom: 50px;
-    margin-left: 17%;
 }
 
 .social p {
@@ -128,10 +142,59 @@ body {
     color: #525253;
 }
 
+/* Mobile Portrait */
+
+@media only screen  and (orientation: portrait) {
+
+    .avatar {
+        text-align: center;
+        margin-bottom: 1px;
+    }
+
+    .avatar img {
+        height: 600px;
+    }
+
+    .business-card p {
+        line-height: 7px;
+        font-size: 35px;
+    }
+
+
+    .menu li {
+        display: block;
+        line-height: 80px;
+        border-bottom: solid 1px #1467A6;
+    }
+
+    .menu li:not(.menu-box) {
+        border-right: none;
+    }
+
+    .menu li a {
+        font-size: 60px;
+        border-right: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+}
 
 /* Mobile Landscape */
 
 @media only screen  and (orientation: landscape) {
+
+    .avatar {
+        top: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .avatar img {
+        height: 200px;
+    }
 
     .main-title {
         margin-top: 40px;
@@ -140,13 +203,13 @@ body {
 
     .business-card {
         margin-left: 26%;
-        margin-bottom: 10%;
-        line-height: 5px;
+        margin-bottom: 5%;
+        line-height: 3px;
     }
 
     .business-card p {
         font-size: 30px;
-        line-height: 8px;
+        line-height: 5px;
     }
 
 
@@ -191,8 +254,12 @@ body {
 
     .social {
         text-align: center;
-        font-size: 30px;
-        margin-bottom: 4%;
+        margin-top: 70px;
+        margin-bottom: 100px;
+    }
+
+    .desktop {
+        display: none;
     }
 
 }
@@ -200,10 +267,19 @@ body {
     /* For desktop: */
 @media only screen and (min-width : 992px) {
 
+    .avatar {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .avatar img {
+        height: 320px;
+    }
+
     .business-card {
-        margin-left: 44%;
+        margin-left: 49%;
         text-align: left;
-        margin-bottom: 40%;
+        margin-bottom: 10%;
     }
     
     .business-card p {
@@ -214,9 +290,9 @@ body {
     }
     
     .main-title {
-        margin-top: 100px;
+        margin-top: 10px;
         margin-bottom: 2%;
-        font-size: 12vw;
+        font-size: 11vw;
         text-align: center;
         font-family: 'Quicksand', sans-serif;
     }
@@ -231,7 +307,7 @@ body {
         margin: 0 auto;
         overflow: auto;
         white-space: no-wrap;
-        max-width: 69%;
+        max-width: 70%;
         animation: 
         typing 3.5s steps(30, end),
         blink-caret .5s step-end infinite;
@@ -277,7 +353,9 @@ body {
     
     .social {
         text-align: center;
-        font-size: 25px;
+        margin-bottom: 10px;
+        margin-left: 0;
+        margin-right: 21%;
     }
     
     .social p {
@@ -292,6 +370,14 @@ body {
 
     .subheaders {
         columns: 2;
+    }
+
+    .mobile {
+        display:none;
+    }
+
+    .desktop {
+        display: block;
     }
 
 
