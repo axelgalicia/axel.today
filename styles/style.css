@@ -101,6 +101,7 @@ body {
 }
 
 .section h4 {
+    font-size: 25px;
     font-weight: 350;
     color: white;
 }
@@ -160,6 +161,7 @@ p.position {
 /* Mobile Portrait */
 
 @media only screen  and (orientation: portrait) { 
+    
 
     .avatar {
         text-align: center;
