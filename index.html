@@ -91,13 +91,14 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto|Lato:300" rel="stylesheet">
     <!-- Scripts START-->
     <script src="/js/app.js"></script>
+    <script src="/js/aiResponses.js"></script>
     <!-- Scripts END-->
     <style>
       /* Modern and clean styles for better readability */
       .section {
         margin: 40px auto;
         padding: 30px;
-        max-width: 900px;
+        max-width: 1300px; /* Made the boxes wider */
         background: linear-gradient(135deg, #ffffff, #f0f4f8);
         border-radius: 12px;
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
@@ -119,7 +120,7 @@
       }
 
       .section#about p {
-        font-size: 1.2rem; /* Slightly smaller font size for about me section */
+        font-size: 1.1rem; /* Reduced font size for about me section */
       }
 
       .work-link a {
@@ -197,10 +198,191 @@
           display: none;
         }
       }
+
+      /* Updated Sidebar styles */
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 300px; /* Increased width for better button content alignment */
+        background: #1467A6; /* Updated background color to match the specified color */
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 1000;
+      }
+
+      .sidebar.open {
+        transform: translateX(0);
+      }
+
+      .sidebar a {
+        font-size: 1.5rem;
+        color: #ffffff; /* Ensured text is readable */
+        text-decoration: none;
+        margin: 15px 0;
+        padding: 12px 25px; /* Adjusted padding for better alignment */
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.2); /* Adjusted button background for better contrast */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* Align text and icons to the left */
+        gap: 15px; /* Increased gap for better spacing */
+        transition: background 0.3s ease, transform 0.3s ease;
+      }
+
+      .sidebar a:hover {
+        background: rgba(255, 255, 255, 0.3); /* Slightly lighter hover effect */
+        color: #e5eef5; /* Subtle text color change on hover */
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for hover effect */
+      }
+
+      .sidebar a i {
+        font-size: 2rem; /* Slightly larger icon size for better visibility */
+      }
+
+      .sidebar-toggle {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background: #1467A6; /* Updated toggle button color to match */
+        color: #ffffff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1100;
+        transition: background 0.3s ease;
+      }
+
+      .sidebar-toggle.hidden {
+        display: none;
+      }
+
+      .sidebar-toggle:hover {
+        background: #005B9D; /* Slightly darker hover effect */
+      }
+
+      @media (max-width: 768px) {
+        .sidebar {
+          width: 250px; /* Adjusted width for smaller screens */
+        }
+
+        .sidebar a {
+          font-size: 1.2rem;
+        }
+      }
+
+      .about-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .about-content {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .chat-box {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      #chat-container {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        max-width: 100%; /* Adjusted chat container to fit the wider section */
+        background: linear-gradient(135deg, #e3f2fd, #ffffff);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      #chat-messages {
+        height: 300px;
+        overflow-y: auto;
+        margin-bottom: 15px;
+        padding: 15px;
+        background: #ffffff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .chat-message {
+        margin: 10px 0;
+        padding: 10px 15px;
+        border-radius: 8px;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 0.5s ease-out forwards;
+      }
+
+      .chat-message.user {
+        background: #1467A6;
+        color: #ffffff;
+        text-align: right;
+      }
+
+      .chat-message.ai {
+        background: #e3f2fd;
+        color: #333;
+        text-align: left;
+      }
+
+      #chat-input {
+        width: calc(100% - 100px);
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-right: 10px;
+      }
+
+      #chat-send {
+        padding: 12px 25px;
+        background: #1467A6;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        margin-top: 10px;
+      }
+
+      #chat-send:hover {
+        background: #005B9D;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
     </style>
   </head>
 
   <body onload="reloadOrientation()">
+    <button class="sidebar-toggle" id="sidebar-toggle" onclick="toggleSidebar()">☰ Menu</button>
+    <div class="sidebar" id="sidebar">
+      <a href="#about"><i class="fas fa-user"></i>About</a>
+      <a href="#experience"><i class="fas fa-briefcase"></i>Experience</a>
+      <a href="#personal-projects"><i class="fas fa-project-diagram"></i>Personal Projects</a>
+      <a href="#courses"><i class="fas fa-graduation-cap"></i>Courses</a>
+      <a href="#certifications"><i class="fas fa-certificate"></i>Certifications</a>
+      <a href="/resume.pdf" target="_blank"><i class="fas fa-file-alt"></i>Resume</a>
+    </div>
+
     <header>
       <div class="avatar">
         <img
@@ -265,9 +447,11 @@
     <div class="menu">
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="/resume.pdf">Resume</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li class="menu-box"><a href="#mywork">My work</a></li>
+        <li class="menu-box"><a href="#personal-projects">Personal Projects</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="/resume.pdf">Resume</a></li>
       </ul>
     </div>
 
@@ -328,21 +512,38 @@
       </p>
     </div>
 
-    <div class="section first-section" id="about">
-      <h4>About me</h4>
-      <p>My name is Axel Galicia.</p>
-      <p>
-        I am a seasoned software engineer with over <span id="years-of-experience"></span> years of experience in
-        designing, developing, and implementing innovative web platforms that
-        address complex challenges and provide substantial value to users and
-        clients.
-      </p>
-      <p>
-        As a certified Professional Scrum Master (PSM), I excel in leading agile
-        teams, promoting a culture of collaboration, effective communication,
-        and high-quality standards throughout the development lifecycle.
-      </p>
+    <div class="section" id="about">
+      <div class="about-container">
+        <div class="about-content">
+          <h4>About me</h4>
+          <p>My name is Axel Galicia.</p>
+          <p>
+            I am a seasoned software engineer with over <span id="years-of-experience"></span> years of experience in
+            designing, developing, and implementing innovative web platforms that
+            address complex challenges and provide substantial value to users and
+            clients.
+          </p>
+          <p>
+            As a certified Professional Scrum Master (PSM), I excel in leading agile
+            teams, promoting a culture of collaboration, effective communication,
+            and high-quality standards throughout the development lifecycle.
+          </p>
+        </div>
+        <div class="chat-box" id="chat-box">
+          <h4>Chat with My AI Agent</h4>
+          <div id="chat-container">
+            <div id="chat-messages"></div>
+            <input
+              type="text"
+              id="chat-input"
+              placeholder="Ask me about my experience..."
+            />
+            <button id="chat-send">Send</button>
+          </div>
+        </div>
+      </div>
     </div>
+
     <div class="section" id="experience">
       <h4>Experience</h4>
       <p class="position">Staff Software Engineer</p>
@@ -364,7 +565,7 @@
       </p>
       <p class="date">Jul 2010 - Apr 2013</p>
     </div>
-    <div class="section" id="mywork">
+    <div class="section" id="personal-projects">
       <h4>Personal Projects</h4>
       <p class="work-link">
         <a href="https://github.com/axelgalicia/bluetooth-distance-visualizer">
@@ -451,6 +652,7 @@
 
       gtag("config", "UA-134763815-1");
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-chatbot-js/dist/chatbot.min.js"></script>
     <script>
       // JavaScript to add fade-in effect on scroll
       document.addEventListener("DOMContentLoaded", () => {
@@ -473,6 +675,72 @@
 
         const yearsOfExperience = getYearsOfExperience();
         document.getElementById("years-of-experience").textContent = yearsOfExperience;
+
+        const chatMessages = document.getElementById("chat-messages");
+        const chatInput = document.getElementById("chat-input");
+        const chatSend = document.getElementById("chat-send");
+
+        function addMessage(content, sender) {
+          const message = document.createElement("div");
+          message.className = `chat-message ${sender}`;
+          message.textContent = content;
+          chatMessages.appendChild(message);
+          chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        chatSend.addEventListener("click", () => {
+          const userMessage = chatInput.value.trim();
+          if (userMessage) {
+            addMessage(userMessage, "user");
+            chatInput.value = "";
+
+            const response =
+              aiResponses[
+                Object.keys(aiResponses).find((key) =>
+                  userMessage.toLowerCase().includes(key)
+                )
+              ] || aiResponses["default"];
+
+            setTimeout(() => addMessage(response, "ai"), 1000); // Added delay for animation effect
+          }
+        });
+
+        chatInput.addEventListener("keypress", (e) => {
+          if (e.key === "Enter") {
+            chatSend.click();
+          }
+        });
+      });
+
+      function toggleSidebar() {
+        const sidebar = document.getElementById("sidebar");
+        const toggleButton = document.getElementById("sidebar-toggle");
+        sidebar.classList.toggle("open");
+        toggleButton.classList.toggle("hidden");
+      }
+
+      // Close sidebar when a link is clicked
+      document.querySelectorAll(".sidebar a").forEach((link) => {
+        link.addEventListener("click", () => {
+          const sidebar = document.getElementById("sidebar");
+          const toggleButton = document.getElementById("sidebar-toggle");
+          sidebar.classList.remove("open");
+          toggleButton.classList.remove("hidden");
+        });
+      });
+
+      // Close sidebar when clicking outside of it
+      document.addEventListener("click", (event) => {
+        const sidebar = document.getElementById("sidebar");
+        const toggleButton = document.getElementById("sidebar-toggle");
+        if (
+          sidebar.classList.contains("open") &&
+          !sidebar.contains(event.target) &&
+          !toggleButton.contains(event.target)
+        ) {
+          sidebar.classList.remove("open");
+          toggleButton.classList.remove("hidden");
+        }
       });
     </script>
   </body>
