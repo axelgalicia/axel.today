@@ -85,10 +85,13 @@
     <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
     <!-- Favicon END-->
-   <!-- Fonts START-->
-    <link href="/styles/style.css" rel="stylesheet">
+    <!-- Fonts START-->
+    <link href="/styles/style.css" rel="stylesheet" />
     <!-- Fonts END-->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto|Lato:300" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand|Roboto|Lato:300"
+      rel="stylesheet"
+    />
     <!-- Scripts START-->
     <script src="/js/app.js"></script>
     <script src="/js/aiResponses.js"></script>
@@ -206,7 +209,7 @@
         left: 0;
         height: 100%;
         width: 300px; /* Increased width for better button content alignment */
-        background: #1467A6; /* Updated background color to match the specified color */
+        background: #1467a6; /* Updated background color to match the specified color */
         box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
         padding: 20px;
         display: flex;
@@ -228,7 +231,12 @@
         margin: 15px 0;
         padding: 12px 25px; /* Adjusted padding for better alignment */
         border-radius: 8px;
-        background: rgba(255, 255, 255, 0.2); /* Adjusted button background for better contrast */
+        background: rgba(
+          255,
+          255,
+          255,
+          0.2
+        ); /* Adjusted button background for better contrast */
         display: flex;
         align-items: center;
         justify-content: flex-start; /* Align text and icons to the left */
@@ -237,7 +245,12 @@
       }
 
       .sidebar a:hover {
-        background: rgba(255, 255, 255, 0.3); /* Slightly lighter hover effect */
+        background: rgba(
+          255,
+          255,
+          255,
+          0.3
+        ); /* Slightly lighter hover effect */
         color: #e5eef5; /* Subtle text color change on hover */
         transform: scale(1.05);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for hover effect */
@@ -251,7 +264,7 @@
         position: fixed;
         top: 20px;
         left: 20px;
-        background: #1467A6; /* Updated toggle button color to match */
+        background: #1467a6; /* Updated toggle button color to match */
         color: #ffffff;
         border: none;
         padding: 15px 20px; /* Increased padding for better visibility */
@@ -269,7 +282,7 @@
       }
 
       .sidebar-toggle:hover {
-        background: #005B9D; /* Slightly darker hover effect */
+        background: #005b9d; /* Slightly darker hover effect */
         transform: scale(1.1); /* Slightly enlarge on hover */
       }
 
@@ -344,7 +357,7 @@
       }
 
       .chat-message.user {
-        background: #1467A6;
+        background: #1467a6;
         color: #ffffff;
         text-align: right;
       }
@@ -365,7 +378,7 @@
 
       #chat-send {
         padding: 12px 25px;
-        background: #1467A6;
+        background: #1467a6;
         color: #ffffff;
         border: none;
         border-radius: 8px;
@@ -375,7 +388,7 @@
       }
 
       #chat-send:hover {
-        background: #005B9D;
+        background: #005b9d;
       }
 
       @keyframes fadeIn {
@@ -388,18 +401,61 @@
           transform: translateY(0);
         }
       }
+
+      .position {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.8rem; /* Increased font size */
+        font-weight: bold; /* Made text bold */
+        color: #2c3e50; /* Darker color for emphasis */
+        margin-bottom: 5px; /* Reduced spacing */
+        border-left: 4px solid #1467a6; /* Added a left border for visual effect */
+        padding-left: 10px; /* Added padding for spacing from the border */
+      }
+
+      .work-link {
+        font-size: 1.2rem; /* Smaller font size for company link */
+        color: #2980b9;
+        text-decoration: none;
+        margin-left: 10px; /* Added spacing between position and link */
+      }
+
+      .date {
+        font-size: 0.5rem; /* Reduced font size to half */
+        color: #7f8c8d; /* Subtle color for less emphasis */
+        margin-top: -5px; /* Adjusted margin for alignment */
+      }
+
+      .experience-total {
+        font-size: 1rem; /* Smaller font size for total time */
+        color: #34495e; /* Subtle color for visibility */
+        margin-left: 10px; /* Added spacing */
+      }
     </style>
   </head>
 
   <body onload="reloadOrientation()">
-    <button class="sidebar-toggle" id="sidebar-toggle" onclick="toggleSidebar()">☰ Sections</button>
+    <button
+      class="sidebar-toggle"
+      id="sidebar-toggle"
+      onclick="toggleSidebar()"
+    >
+      ☰ Sections
+    </button>
     <div class="sidebar" id="sidebar">
       <a href="#about"><i class="fas fa-user"></i>About</a>
       <a href="#experience"><i class="fas fa-briefcase"></i>Experience</a>
-      <a href="#personal-projects"><i class="fas fa-project-diagram"></i>Personal Projects</a>
+      <a href="#personal-projects"
+        ><i class="fas fa-project-diagram"></i>Personal Projects</a
+      >
       <a href="#courses"><i class="fas fa-graduation-cap"></i>Courses</a>
-      <a href="#certifications"><i class="fas fa-certificate"></i>Certifications</a>
-      <a href="/resume.pdf" target="_blank"><i class="fas fa-file-alt"></i>Resume</a>
+      <a href="#certifications"
+        ><i class="fas fa-certificate"></i>Certifications</a
+      >
+      <a href="/resume.pdf" target="_blank"
+        ><i class="fas fa-file-alt"></i>Resume</a
+      >
     </div>
 
     <header>
@@ -467,7 +523,9 @@
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li class="menu-box"><a href="#personal-projects">Personal Projects</a></li>
+        <li class="menu-box">
+          <a href="#personal-projects">Personal Projects</a>
+        </li>
         <li><a href="#courses">Courses</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="/resume.pdf">Resume</a></li>
@@ -537,15 +595,17 @@
           <h4>About me</h4>
           <p>My name is Axel Galicia.</p>
           <p>
-            I am a seasoned software engineer with over <span id="years-of-experience"></span> years of experience in
-            designing, developing, and implementing innovative web platforms that
-            address complex challenges and provide substantial value to users and
-            clients.
+            I am a seasoned software engineer with over
+            <span id="years-of-experience"></span> years of experience in
+            designing, developing, and implementing innovative web platforms
+            that address complex challenges and provide substantial value to
+            users and clients.
           </p>
           <p>
-            As a certified Professional Scrum Master (PSM), I excel in leading agile
-            teams, promoting a culture of collaboration, effective communication,
-            and high-quality standards throughout the development lifecycle.
+            As a certified Professional Scrum Master (PSM), I excel in leading
+            agile teams, promoting a culture of collaboration, effective
+            communication, and high-quality standards throughout the development
+            lifecycle.
           </p>
         </div>
         <div class="chat-box" id="chat-box">
@@ -564,25 +624,39 @@
     </div>
 
     <div class="section" id="experience">
-      <h4>Experience</h4>
-      <p class="position">Staff Software Engineer</p>
-      <p class="work-link"><a href="https://ledn.io">Ledn | www.ledn.io</a></p>
-      <p class="date">Oct 2021 - Current</p>
-      <p class="position">Senior Software Engineer</p>
-      <p class="work-link">
-        <a href="https://architech.ca">Architech | www.architech.ca</a>
+      <h4>Experience<span class="experience-total" id="total-experience"></span></h4>
+      <p class="position">
+        Staff Software Engineer<span class="work-link"
+          ><a href="https://ledn.io">Ledn | www.ledn.io</a></span
+        >
       </p>
-      <p class="date">May 2018 - Sep 2021</p>
-      <p class="position">Software Developer II</p>
-      <p class="work-link">
-        <a href="https://experian.com">Experian | www.experian.com</a>
+      <p class="date">
+        Oct 2021 - Current (<span id="experience-ledn"></span>)
       </p>
-      <p class="date">Jul 2013 - Apr 2017</p>
-      <p class="position">Software Development Engineer</p>
-      <p class="work-link">
-        <a href="https://neology.net">Neology | www.neology.net</a>
+      <p class="position">
+        Senior Software Engineer<span class="work-link"
+          ><a href="https://architech.ca">Architech | www.architech.ca</a></span
+        >
       </p>
-      <p class="date">Jul 2010 - Apr 2013</p>
+      <p class="date">
+        May 2018 - Sep 2021 (<span id="experience-architech"></span>)
+      </p>
+      <p class="position">
+        Software Developer II<span class="work-link"
+          ><a href="https://experian.com">Experian | www.experian.com</a></span
+        >
+      </p>
+      <p class="date">
+        Jul 2013 - Apr 2017 (<span id="experience-experian"></span>)
+      </p>
+      <p class="position">
+        Software Development Engineer<span class="work-link"
+          ><a href="https://neology.net">Neology | www.neology.net</a></span
+        >
+      </p>
+      <p class="date">
+        Jul 2010 - Apr 2013 (<span id="experience-neology"></span>)
+      </p>
     </div>
     <div class="section" id="personal-projects">
       <h4>Personal Projects</h4>
@@ -693,7 +767,8 @@
         });
 
         const yearsOfExperience = getYearsOfExperience();
-        document.getElementById("years-of-experience").textContent = yearsOfExperience;
+        document.getElementById("years-of-experience").textContent =
+          yearsOfExperience;
 
         const chatMessages = document.getElementById("chat-messages");
         const chatInput = document.getElementById("chat-input");
@@ -729,6 +804,40 @@
             chatSend.click();
           }
         });
+
+        const calculateYearsAndMonths = (start, end) => {
+          const startDate = new Date(start);
+          const endDate = end === "Current" ? new Date() : new Date(end);
+          let years = endDate.getFullYear() - startDate.getFullYear();
+          let months = endDate.getMonth() - startDate.getMonth();
+
+          if (months < 0) {
+            years -= 1;
+            months += 12;
+          }
+
+          return `${years} year${years !== 1 ? 's' : ''}, ${months} month${months !== 1 ? 's' : ''}`;
+        };
+
+        document.getElementById("experience-ledn").textContent = calculateYearsAndMonths(
+          "2021-10-01",
+          "Current"
+        );
+        document.getElementById("experience-architech").textContent = calculateYearsAndMonths(
+          "2018-05-01",
+          "2021-09-01"
+        );
+        document.getElementById("experience-experian").textContent = calculateYearsAndMonths(
+          "2013-07-01",
+          "2017-04-01"
+        );
+        document.getElementById("experience-neology").textContent = calculateYearsAndMonths(
+          "2010-07-01",
+          "2013-04-01"
+        );
+
+        const totalExperience = calculateYearsAndMonths("2010-07-01", "Current");
+        document.getElementById("total-experience").textContent = `(${totalExperience})`;
       });
 
       function toggleSidebar() {
