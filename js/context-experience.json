@@ -1,0 +1,378 @@
+{
+  "default": [
+    "I'm sorry, I don't have an answer to this question at the moment, but you can contact me at axelgalicia@gmail.com.",
+    "I apologize, but I currently don't have an answer for this. Feel free to reach out to me at axelgalicia@gmail.com.",
+    "Unfortunately, I don't have the information you're looking for right now. You can email me at axelgalicia@gmail.com.",
+    "I'm sorry, I can't answer this question at the moment. Please contact me at axelgalicia@gmail.com.",
+    "I regret that I don't have an answer to this question. You can reach me at axelgalicia@gmail.com.",
+    "I don't have an answer for this question right now, but you can email me at axelgalicia@gmail.com.",
+    "Apologies, I don't know how to answer this question yet. Please feel free to contact me at axelgalicia@gmail.com.",
+    "I'm sorry, I don't have the answer to this question at the moment. You can reach out to me at axelgalicia@gmail.com.",
+    "I apologize, but I don't have an answer for this question right now. You can contact me at axelgalicia@gmail.com.",
+    "Unfortunately, I don't know how to answer this question yet. Please email me at axelgalicia@gmail.com.",
+    "I'm sorry, I don't have the information to answer this question. You can reach me at axelgalicia@gmail.com.",
+    "I regret that I can't answer this question at the moment. Feel free to contact me at axelgalicia@gmail.com.",
+    "I don't have an answer to this question right now, but you can email me at axelgalicia@gmail.com.",
+    "Apologies, I currently don't know how to answer this question. Please reach out to me at axelgalicia@gmail.com.",
+    "I'm sorry, I don't have an answer for this question at the moment. You can contact me at axelgalicia@gmail.com.",
+    "I apologize, but I don't know how to answer this question yet. Feel free to email me at axelgalicia@gmail.com.",
+    "Unfortunately, I don't have the answer to this question right now. You can reach me at axelgalicia@gmail.com.",
+    "I'm sorry, I don't have the information to answer this question at the moment. Please contact me at axelgalicia@gmail.com.",
+    "I regret that I don't know how to answer this question yet. You can email me at axelgalicia@gmail.com.",
+    "I don't have an answer for this question right now, but you can reach out to me at axelgalicia@gmail.com."
+  ],
+  "name": ["My name is Axel Galicia, nice to meet you!"],
+  "title": ["I am a Staff Software Engineer."],
+  "phone": ["You can contact me at axelgalicia+today@gmail.com"],
+  "email": ["You can reach me at axelgalicia+today@gmai.com"],
+  "introduction": [
+    "I am a Staff Software Engineer with experience in JavaScript, React, Node.js, and cloud technologies.",
+    "I have a strong background in software engineering, specializing in JavaScript and cloud platforms.",
+    "I am a Staff Software Engineer with expertise in JavaScript, React, Node.js, and cloud computing.",
+    "I have extensive experience in software development, focusing on JavaScript and cloud technologies.",
+    "I am a Staff Software Engineer skilled in JavaScript, React, Node.js, and cloud platforms like AWS and Azure."
+  ],
+  "education": [
+    "I hold a Bachelor's degree in Computer Science from the Intituto Politécnico Nacional in Mexico City.",
+    "I graduated with a degree in Computer Science from the Intituto Politécnico Nacional in Mexico City.",
+    "I have a Bachelor's degree in Computer Science from the Intituto Politécnico Nacional in Mexico City.",
+    "I earned my degree in Computer Science from the Intituto Politécnico Nacional in Mexico City.",
+    "I completed my Bachelor's degree in Computer Science at the Intituto Politécnico Nacional in Mexico City."
+  ],
+  "location": [
+    "I am currently based in Toronto, Canada.",
+    "I live in Toronto, Canada.",
+    "I am located in Toronto, Canada.",
+    "I reside in Toronto, Canada.",
+    "I am situated in Toronto, Canada."
+  ],
+  "availability": [
+    "I am available for full-time opportunities.",
+    "I am open to full-time positions.",
+    "I am looking for full-time job opportunities.",
+    "I am interested in full-time roles.",
+    "I am seeking full-time employment."
+  ],
+  "interests": [
+    "I am passionate about software development, cloud computing, and machine learning.",
+    "I have a keen interest in software engineering, cloud technologies, and machine learning.",
+    "I am enthusiastic about software development, cloud platforms, and machine learning.",
+    "I am interested in software engineering, cloud computing, and AI technologies.",
+    "I have a strong interest in software development, cloud solutions, and machine learning."
+  ],
+  "projects": [
+    "I have worked on various projects involving JavaScript, React, and Node.js.",
+    "I have developed applications using JavaScript, React, and Node.js.",
+    "I have experience building projects with JavaScript, React, and Node.js.",
+    "I have contributed to projects utilizing JavaScript, React, and Node.js.",
+    "I have been involved in software development projects using JavaScript, React, and Node.js."
+  ],
+
+  "hobbies": [
+    "In my free time, I enjoy reading about technology and programming.",
+    "I like to explore new technologies and programming languages.",
+    "I enjoy learning about software development trends and innovations.",
+    "I am interested in reading tech blogs and articles.",
+    "I like to keep up with the latest advancements in technology."
+  ],
+  "skills": [
+    "I have expertise in JavaScript, React, Node.js, AWS, Azure, Scrum Master practices, and Machine Learning.",
+    "My skill set includes JavaScript, React, Node.js, cloud platforms like AWS and Azure, and experience as a Scrum Master.",
+    "I specialize in JavaScript, React, and Node.js, with additional knowledge in AWS, Azure, and Machine Learning.",
+    "I am proficient in JavaScript, React, Node.js, and cloud technologies such as AWS and Azure.",
+    "My technical skills include JavaScript, React, Node.js, and cloud computing with AWS and Azure.",
+    "I have a strong background in JavaScript, React, Node.js, and Machine Learning, along with Scrum Master expertise.",
+    "I am skilled in JavaScript, React, Node.js, and cloud platforms like AWS and Azure.",
+    "My expertise spans JavaScript, React, Node.js, and Machine Learning, with experience in Scrum methodologies.",
+    "I bring skills in JavaScript, React, Node.js, and cloud technologies like AWS and Azure.",
+    "I am experienced in JavaScript, React, Node.js, and Machine Learning, with a focus on cloud platforms."
+  ],
+  "experience": [
+    "I currently work at Ledn as a Staff Software Engineer since October 2021.",
+    "I am a Staff Software Engineer at Ledn, where I started in October 2021.",
+    "Since October 2021, I have been working at Ledn as a Staff Software Engineer.",
+    "I joined Ledn in October 2021 as a Staff Software Engineer.",
+    "At Ledn, I hold the position of Staff Software Engineer, starting in October 2021.",
+    "Previously, I worked at Architech as a Senior Software Engineer from May 2018 to September 2021.",
+    "From 2018 to 2021, I was a Senior Software Engineer at Architech.",
+    "I served as a Senior Software Engineer at Architech between May 2018 and September 2021.",
+    "Before Ledn, I worked at Architech as a Senior Software Engineer for over three years.",
+    "At Architech, I contributed as a Senior Software Engineer from May 2018 to September 2021."
+  ],
+  "courses": [
+    "I completed the '3253 Machine Learning' course at the University of Toronto.",
+    "I took the 'React Nanodegree' program offered by Udacity.",
+    "I have a certificate in 'Practical Machine Learning' from Johns Hopkins University.",
+    "I completed the 'R Programming' course at Johns Hopkins University.",
+    "I studied '3253 Machine Learning' at the University of Toronto.",
+    "I earned a React Nanodegree from Udacity.",
+    "I completed 'Practical Machine Learning' through Coursera, offered by Johns Hopkins University.",
+    "I have a certificate in 'R Programming' from Johns Hopkins University via Coursera.",
+    "I pursued '3253 Machine Learning' at the University of Toronto.",
+    "I completed the 'React Nanodegree' program from Udacity."
+  ],
+  "certifications": [
+    "I hold a certification in 'Introduction to Artificial Intelligence' from the University of Oxford.",
+    "I am a certified Scrum Master Professional through Scrum.org.",
+    "I earned the 'Microsoft AZ-900 Azure Fundamentals' certification from Microsoft.",
+    "I have a certificate in 'Introduction to Artificial Intelligence' from Oxford University.",
+    "I am certified as a Scrum Master Professional by Scrum.org.",
+    "I hold the 'Microsoft AZ-900 Azure Fundamentals' certification.",
+    "I earned a certification in 'Introduction to Artificial Intelligence' from the University of Oxford.",
+    "I am a certified Scrum Master Professional, accredited by Scrum.org.",
+    "I hold the 'Microsoft AZ-900 Azure Fundamentals' certification from Microsoft.",
+    "I have a certification in 'Introduction to Artificial Intelligence' from Oxford University."
+  ],
+  "blockchain": [
+    "I have experience creating smart contracts using Solidity for Ethereum.",
+    "I completed a Blockchain Nanodegree where I deployed smart contracts to Ethereum.",
+    "I can create and deploy smart contracts using Solidity on Ethereum.",
+    "I have worked on blockchain projects involving Ethereum and Solidity.",
+    "I am skilled in developing smart contracts for Ethereum using Solidity."
+  ],
+  "devops": [
+    "I have experience with CI/CD pipelines for rapid deployments.",
+    "I worked on DevOps practices like continuous integration and deployment.",
+    "I improved CI/CD pipelines to streamline development and production deployments.",
+    "I am familiar with DevOps tools and practices for efficient software delivery.",
+    "I have implemented CI/CD pipelines to enhance deployment processes."
+  ],
+  "microservices": [
+    "I have designed and implemented microservices using Spring Boot and Node.js.",
+    "I migrated monolithic systems to microservices architectures.",
+    "I have experience building microservices for scalable applications.",
+    "I worked on microservices using frameworks like Spring Boot and Express.js.",
+    "I have expertise in creating microservices for distributed systems."
+  ],
+  "cloud": [
+    "I have deployed distributed applications on AWS.",
+    "I am experienced in cloud platforms like AWS and Azure.",
+    "I have worked on cloud deployments using AWS services.",
+    "I am skilled in cloud computing with AWS and Azure.",
+    "I have experience with cloud-based architectures and deployments."
+  ],
+  "agile": [
+    "I am a certified Scrum Master with experience leading agile teams.",
+    "I have led agile teams to deliver high-quality software.",
+    "I am experienced in agile methodologies and Scrum practices.",
+    "I have facilitated agile processes to improve team collaboration.",
+    "I am skilled in implementing agile practices for software development."
+  ],
+  "mobile": [
+    "I have designed mobile solutions for Android and iOS platforms.",
+    "I developed mobile applications for car registration systems.",
+    "I have experience creating mobile apps for various use cases.",
+    "I worked on mobile solutions for Android and iOS devices.",
+    "I am skilled in designing and developing mobile applications."
+  ],
+  "database": [
+    "I have designed relational databases using MySQL and MSSQL.",
+    "I worked with NoSQL databases like MongoDB for dynamic data storage.",
+    "I have experience optimizing database queries for performance.",
+    "I am skilled in relational and NoSQL database design.",
+    "I have implemented efficient database solutions for various projects."
+  ],
+  "search": [
+    "I have used Elasticsearch to optimize search functionality.",
+    "I implemented search engines to improve data retrieval times.",
+    "I am experienced in using Elasticsearch for customized queries.",
+    "I worked on search engine solutions for dynamic data.",
+    "I have expertise in implementing search functionality with Elasticsearch."
+  ],
+  "rfid": [
+    "I developed RFID-based solutions for car registration systems.",
+    "I worked on RFID technology integration with web platforms.",
+    "I have experience creating RFID solutions for various applications.",
+    "I implemented RFID systems for international projects.",
+    "I am skilled in developing RFID-based applications."
+  ],
+  "frontend": [
+    "I have worked on frontend development using Angular and React.",
+    "I developed user interfaces for web applications.",
+    "I am experienced in creating responsive frontend designs.",
+    "I worked on frontend frameworks like Angular and React.",
+    "I have expertise in building user-friendly frontend interfaces."
+  ],
+  "backend": [
+    "I have developed backend systems using Node.js and Spring Boot.",
+    "I worked on backend architectures for scalable applications.",
+    "I am experienced in backend development with Node.js and Java.",
+    "I implemented backend solutions for various projects.",
+    "I have expertise in creating robust backend systems."
+  ],
+  "testing": [
+    "I have written unit tests to cover critical scenarios.",
+    "I worked on automated testing using frameworks like Cucumber.",
+    "I am experienced in writing tests to ensure software quality.",
+    "I implemented testing strategies for various applications.",
+    "I have expertise in creating automated test cases."
+  ],
+  "docker": [
+    "I have used Docker for containerization of applications.",
+    "I worked on Docker Swarm for managing containerized services.",
+    "I am experienced in deploying applications using Docker.",
+    "I implemented containerization solutions with Docker.",
+    "I have expertise in using Docker for software deployment."
+  ],
+  "kubernetes": [
+    "I have migrated applications from Docker Swarm to Kubernetes.",
+    "I worked on Kubernetes for managing containerized applications.",
+    "I am experienced in deploying services using Kubernetes.",
+    "I implemented Kubernetes solutions for scalable deployments.",
+    "I have expertise in using Kubernetes for container orchestration."
+  ],
+  "ci/cd": [
+    "I improved CI/CD pipelines for rapid deployments.",
+    "I worked on continuous integration and deployment processes.",
+    "I am experienced in setting up CI/CD pipelines.",
+    "I implemented CI/CD solutions for efficient software delivery.",
+    "I have expertise in creating CI/CD pipelines for various projects."
+  ],
+  "scrum": [
+    "I am a certified Scrum Master with experience in agile practices.",
+    "I have led Scrum teams to deliver high-quality software.",
+    "I am experienced in facilitating Scrum processes.",
+    "I worked on implementing Scrum methodologies for software development.",
+    "I have expertise in leading Scrum teams to achieve project goals."
+  ],
+  "languages": [
+    "I am fluent in English and a native Spanish speaker.",
+    "I have professional working proficiency in English and Spanish.",
+    "I am bilingual, fluent in English and Spanish.",
+    "I can communicate effectively in both English and Spanish.",
+    "I have strong language skills in English and Spanish."
+  ],
+  "remote": [
+    "I am open to working remotely or in hybrid environments.",
+    "I am comfortable with remote work and hybrid setups.",
+    "I am willing to work in remote or hybrid environments.",
+    "I am flexible and can adapt to remote or hybrid work settings.",
+    "I am available for remote work and hybrid arrangements.",
+    "I am experienced in working remotely and in hybrid teams.",
+    "I am open to collaborating in remote or hybrid work environments.",
+    "I am happy to work remotely or in a hybrid capacity.",
+    "I am capable of working effectively in remote or hybrid setups.",
+    "I am interested in remote work and hybrid opportunities.",
+    "I am prepared to work in remote or hybrid work settings."
+  ],
+  "leadership": [
+    "I have experience mentoring junior developers to improve their skills.",
+    "I have led teams to deliver high-quality software solutions.",
+    "I am skilled in providing technical guidance to team members.",
+    "I have facilitated team collaboration to achieve project goals.",
+    "I have experience leading cross-functional teams in agile environments.",
+    "I have mentored team members to adopt best practices in software development.",
+    "I have led design and architecture discussions to improve systems.",
+    "I have experience managing teams to meet deadlines and deliverables.",
+    "I have provided leadership in resolving technical challenges.",
+    "I have guided teams to implement scalable and maintainable solutions."
+  ],
+  "architecture": [
+    "I have contributed to the design and architecture of scalable systems.",
+    "I have experience in designing microservices architectures.",
+    "I have participated in architecture discussions to improve system performance.",
+    "I have designed solutions to meet business and technical requirements.",
+    "I have experience in creating architecture diagrams for complex systems.",
+    "I have worked on designing cloud-based architectures.",
+    "I have contributed to the architecture of distributed systems.",
+    "I have experience in designing secure and scalable applications.",
+    "I have participated in architecture reviews to ensure best practices.",
+    "I have designed systems to handle high traffic and large data volumes."
+  ],
+  "performance": [
+    "I have optimized application performance to reduce response times.",
+    "I have experience in profiling and improving system performance.",
+    "I have worked on optimizing database queries for better performance.",
+    "I have implemented caching strategies to enhance application speed.",
+    "I have identified and resolved performance bottlenecks in systems.",
+    "I have experience in load testing to ensure system reliability.",
+    "I have improved performance by refactoring inefficient code.",
+    "I have worked on scaling applications to handle increased traffic.",
+    "I have optimized APIs for faster response times.",
+    "I have implemented performance monitoring tools to track system metrics."
+  ],
+  "security": [
+    "I have implemented security measures to protect sensitive data.",
+    "I have experience in securing APIs against unauthorized access.",
+    "I have worked on encrypting data to ensure confidentiality.",
+    "I have implemented authentication and authorization mechanisms.",
+    "I have experience in conducting security audits for applications.",
+    "I have worked on securing cloud-based applications.",
+    "I have implemented best practices for secure software development.",
+    "I have experience in mitigating security vulnerabilities in systems.",
+    "I have worked on securing applications against common threats like SQL injection.",
+    "I have implemented role-based access control for secure data access."
+  ],
+  "collaboration": [
+    "I have collaborated with cross-functional teams to deliver projects.",
+    "I have worked closely with product managers to define requirements.",
+    "I have collaborated with designers to create user-friendly interfaces.",
+    "I have worked with QA teams to ensure software quality.",
+    "I have collaborated with DevOps teams to streamline deployments.",
+    "I have worked with stakeholders to align technical solutions with business goals.",
+    "I have participated in code reviews to maintain code quality.",
+    "I have collaborated with remote teams to deliver software solutions.",
+    "I have worked with data scientists to integrate machine learning models.",
+    "I have collaborated with frontend and backend teams to build cohesive applications."
+  ],
+  "innovation": [
+    "I have introduced new technologies to improve system efficiency.",
+    "I have implemented innovative solutions to solve complex problems.",
+    "I have worked on creating prototypes to test new ideas.",
+    "I have introduced automation to reduce manual effort.",
+    "I have implemented innovative features to enhance user experience.",
+    "I have worked on integrating cutting-edge technologies into projects.",
+    "I have proposed innovative solutions to optimize workflows.",
+    "I have implemented tools to improve developer productivity.",
+    "I have worked on creating innovative solutions for data processing.",
+    "I have introduced new methodologies to improve project outcomes."
+  ],
+  "mentorship": [
+    "I have mentored junior developers to improve their coding skills.",
+    "I have provided guidance to team members on best practices.",
+    "I have conducted knowledge-sharing sessions for the team.",
+    "I have helped team members resolve technical challenges.",
+    "I have provided mentorship to interns and new hires.",
+    "I have guided team members in adopting new technologies.",
+    "I have provided feedback to team members to help them grow.",
+    "I have mentored team members to improve their problem-solving skills.",
+    "I have provided support to team members in achieving their goals.",
+    "I have helped team members develop their career paths."
+  ],
+  "automation": [
+    "I have automated processes to reduce manual effort.",
+    "I have implemented automation tools to improve efficiency.",
+    "I have worked on automating deployment pipelines.",
+    "I have automated repetitive tasks to save time.",
+    "I have implemented automation scripts for data processing.",
+    "I have worked on automating testing processes.",
+    "I have introduced automation to improve system reliability.",
+    "I have implemented tools to automate monitoring and alerts.",
+    "I have worked on automating workflows to enhance productivity.",
+    "I have implemented automation to streamline business processes."
+  ],
+  "scalability": [
+    "I have designed systems to scale with increasing traffic.",
+    "I have implemented solutions to handle high data volumes.",
+    "I have worked on scaling applications to meet user demands.",
+    "I have optimized systems for horizontal and vertical scaling.",
+    "I have implemented load balancing to improve scalability.",
+    "I have worked on designing scalable architectures.",
+    "I have implemented caching strategies to enhance scalability.",
+    "I have worked on scaling databases to handle large datasets.",
+    "I have optimized APIs for scalable performance.",
+    "I have implemented solutions to ensure system scalability."
+  ],
+  "problem-solving": [
+    "I have resolved complex technical challenges in projects.",
+    "I have worked on identifying and fixing system issues.",
+    "I have implemented solutions to address performance bottlenecks.",
+    "I have resolved technical problems to meet project deadlines.",
+    "I have worked on troubleshooting and debugging applications.",
+    "I have implemented solutions to improve system reliability.",
+    "I have resolved issues to ensure seamless user experience.",
+    "I have worked on solving problems to optimize workflows.",
+    "I have implemented solutions to address customer pain points.",
+    "I have resolved challenges to improve system performance."
+  ]
+}

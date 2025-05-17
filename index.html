@@ -94,7 +94,12 @@
     />
     <!-- Scripts START-->
     <script src="/js/app.js"></script>
-    <script src="/js/aiResponses.js"></script>
+    <script type="module">
+      import { initializeChat } from "./js/chat.js";
+
+      // Initialize the chat functionality
+      initializeChat();
+    </script>
     <!-- Scripts END-->
     <style>
       /* Modern and clean styles for better readability */
@@ -615,14 +620,16 @@
               id="chat-input"
               placeholder="Ask me about my experience..."
             />
-            <button id="chat-send">Send</button>
+            <button id="chat-send">Ask</button>
           </div>
         </div>
       </div>
     </div>
 
     <div class="section" id="experience">
-      <h4>Experience<span class="experience-total" id="total-experience"></span></h4>
+      <h4>
+        Experience<span class="experience-total" id="total-experience"></span>
+      </h4>
       <p class="position">
         Staff Software Engineer<span class="work-link"
           ><a href="https://ledn.io">Ledn | www.ledn.io</a></span
@@ -743,7 +750,6 @@
 
       gtag("config", "UA-134763815-1");
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-chatbot-js/dist/chatbot.min.js"></script>
     <script>
       // JavaScript to add fade-in effect on scroll
       document.addEventListener("DOMContentLoaded", () => {
@@ -768,41 +774,6 @@
         document.getElementById("years-of-experience").textContent =
           yearsOfExperience;
 
-        const chatMessages = document.getElementById("chat-messages");
-        const chatInput = document.getElementById("chat-input");
-        const chatSend = document.getElementById("chat-send");
-
-        function addMessage(content, sender) {
-          const message = document.createElement("div");
-          message.className = `chat-message ${sender}`;
-          message.textContent = content;
-          chatMessages.appendChild(message);
-          chatMessages.scrollTop = chatMessages.scrollHeight;
-        }
-
-        chatSend.addEventListener("click", () => {
-          const userMessage = chatInput.value.trim();
-          if (userMessage) {
-            addMessage(userMessage, "user");
-            chatInput.value = "";
-
-            const response =
-              aiResponses[
-                Object.keys(aiResponses).find((key) =>
-                  userMessage.toLowerCase().includes(key)
-                )
-              ] || aiResponses["default"];
-
-            setTimeout(() => addMessage(response, "ai"), 1000); // Added delay for animation effect
-          }
-        });
-
-        chatInput.addEventListener("keypress", (e) => {
-          if (e.key === "Enter") {
-            chatSend.click();
-          }
-        });
-
         const calculateYearsAndMonths = (start, end) => {
           const startDate = new Date(start);
           const endDate = end === "Current" ? new Date() : new Date(end);
@@ -814,28 +785,27 @@
             months += 12;
           }
 
-          return `${years} year${years !== 1 ? 's' : ''}, ${months} month${months !== 1 ? 's' : ''}`;
+          return `${years} year${years !== 1 ? "s" : ""}, ${months} month${
+            months !== 1 ? "s" : ""
+          }`;
         };
 
-        document.getElementById("experience-ledn").textContent = calculateYearsAndMonths(
-          "2021-10-01",
+        document.getElementById("experience-ledn").textContent =
+          calculateYearsAndMonths("2021-10-01", "Current");
+        document.getElementById("experience-architech").textContent =
+          calculateYearsAndMonths("2018-05-01", "2021-09-01");
+        document.getElementById("experience-experian").textContent =
+          calculateYearsAndMonths("2013-07-01", "2017-04-01");
+        document.getElementById("experience-neology").textContent =
+          calculateYearsAndMonths("2010-07-01", "2013-04-01");
+
+        const totalExperience = calculateYearsAndMonths(
+          "2010-07-01",
           "Current"
         );
-        document.getElementById("experience-architech").textContent = calculateYearsAndMonths(
-          "2018-05-01",
-          "2021-09-01"
-        );
-        document.getElementById("experience-experian").textContent = calculateYearsAndMonths(
-          "2013-07-01",
-          "2017-04-01"
-        );
-        document.getElementById("experience-neology").textContent = calculateYearsAndMonths(
-          "2010-07-01",
-          "2013-04-01"
-        );
-
-        const totalExperience = calculateYearsAndMonths("2010-07-01", "Current");
-        document.getElementById("total-experience").textContent = `(${totalExperience})`;
+        document.getElementById(
+          "total-experience"
+        ).textContent = `(${totalExperience})`;
       });
 
       function toggleSidebar() {
