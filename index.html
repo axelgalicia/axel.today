@@ -2,188 +2,478 @@
     Author: Axel Galicia
     email: axelgalicia@gmail.com
     github: http://github.com/axelgalicia
-    updated: Jan 31st, 2022
+    updated: May 17th, 2025
 -->
 
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Axel Today</title>
 
     <!-- Favicon START-->
-    <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/icons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/icons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/icons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/icons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/icons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/icons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/icons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/icons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- Favicon END-->
-
-    <!-- Fonts START-->
+   <!-- Fonts START-->
     <link href="/styles/style.css" rel="stylesheet">
     <!-- Fonts END-->
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto|Lato:300" rel="stylesheet">
     <!-- Scripts START-->
     <script src="/js/app.js"></script>
     <!-- Scripts END-->
-</head>
+    <style>
+      /* Modern and clean styles for better readability */
+      .section {
+        margin: 40px auto;
+        padding: 30px;
+        max-width: 900px;
+        background: linear-gradient(135deg, #ffffff, #f0f4f8);
+        border-radius: 12px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      }
 
-<body onload="reloadOrientation()">
+      .section h4 {
+        font-size: 2.2rem; /* Slightly larger font size */
+        color: #2c3e50;
+        margin-bottom: 25px;
+        border-bottom: 3px solid #bdc3c7;
+        padding-bottom: 12px;
+      }
+
+      .section p {
+        font-size: 1.6rem; /* Increased font size for better readability */
+        line-height: 1.8;
+        color: #34495e;
+        margin-bottom: 20px;
+      }
+
+      .section#about p {
+        font-size: 1.2rem; /* Slightly smaller font size for about me section */
+      }
+
+      .work-link a {
+        font-size: 1.5rem; /* Larger font size for links */
+        color: #2980b9;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+
+      .work-link a:hover {
+        color: #1abc9c;
+        transform: scale(1.05);
+        text-decoration: underline;
+      }
+
+      .menu ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 25px 0;
+      }
+
+      .menu ul li {
+        margin: 0 20px;
+      }
+
+      .menu ul li a {
+        font-size: 1.5rem; /* Larger font size for menu links */
+        color: #2980b9;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+
+      .menu ul li a:hover {
+        color: #1abc9c;
+        transform: scale(1.05);
+      }
+
+      .social img {
+        border-radius: 50%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .social img:hover {
+        transform: scale(1.15);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .social.desktop p {
+        display: inline-block;
+        margin: 0 15px;
+      }
+
+      .social.mobile p {
+        margin: 25px 0;
+      }
+
+      .icon-land {
+        display: none;
+      }
+
+      .icon-port {
+        display: block;
+      }
+
+      @media (orientation: landscape) {
+        .icon-land {
+          display: block;
+        }
+
+        .icon-port {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body onload="reloadOrientation()">
     <header>
-        <div class="avatar">
-            <img src="/images/avatar1.svg" alt="avatar" title="Axel Galicia" height="10">
+      <div class="avatar">
+        <img
+          src="/images/avatar1.svg"
+          alt="avatar"
+          title="Axel Galicia"
+          height="80"
+        />
+      </div>
+      <div class="main-title">
+        <div class="typer">
+          <p class="type">
+            <span class="curly">{</span><span class="text-typed">axel</span
+            ><span class="text-typed-dot">.</span
+            ><span class="text-typed">today</span><span class="curly">}</span>
+          </p>
         </div>
-        <div class="main-title">
-            <div class="typer">
-                <p class="type">
-                    <span class="curly">{</span><span class="text-typed">axel</span><span
-                        class="text-typed-dot">.</span><span class="text-typed">today</span><span class="curly">}</span>
-                </p>
-            </div>
-        </div>
+      </div>
     </header>
 
     <div class="subheaders">
+      <div class="business-card">
+        <p class="personal-name">Axel Galicia</p>
+        <p>Staff Software Engineer | Consultant</p>
+        <p>axelgalicia@gmail.com</p>
+      </div>
 
-        <div class="business-card">
-            <p class="personal-name">Axel Galicia</p>
-            <p>Staff Software Engineer | Consultant</p>
-            <p>axelgalicia@gmail.com</p>
-        </div>
-
-        <div class="social desktop">
-            <p>
-                <a href="http://github.com/axelgalicia">
-                    <img src="/images/github-icon.png" alt="github" width="32" height="32">
-                </a>
-            </p>
-            <p>
-                <a href="https://www.linkedin.com/in/axelgalicia/">
-                    <img src="/images/linkedin-icon.png" alt="linkedin" width="32" height="32">
-                </a>
-            </p>
-            <p>
-                <a href="https://twitter.com/axelgaliciac">
-                    <img src="/images/twitter-icon.png" alt="linkedin" width="32" height="32">
-                </a>
-            </p>
-        </div>
-
+      <div class="social desktop">
+        <p>
+          <a href="http://github.com/axelgalicia">
+            <img
+              src="/images/github-icon.png"
+              alt="github"
+              width="32"
+              height="32"
+            />
+          </a>
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/axelgalicia/">
+            <img
+              src="/images/linkedin-icon.png"
+              alt="linkedin"
+              width="32"
+              height="32"
+            />
+          </a>
+        </p>
+        <p>
+          <a href="https://twitter.com/axelgaliciac">
+            <img
+              src="/images/twitter-icon.png"
+              alt="linkedin"
+              width="32"
+              height="32"
+            />
+          </a>
+        </p>
+      </div>
     </div>
 
-
     <div class="menu">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="/resume.pdf">Resume</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li class="menu-box"><a href="#mywork">My work</a></li>
-        </ul>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="/resume.pdf">Resume</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li class="menu-box"><a href="#mywork">My work</a></li>
+      </ul>
     </div>
 
     <div class="social mobile">
-        <p>
-            <a href="http://github.com/axelgalicia">
-                <img class="icon-land" src="/images/github-icon.png" alt="github" width="64" height="64">
-                <img class="icon-port" src="/images/github-icon.png" alt="github" width="128" height="128">
-            </a>
-        </p>
-        <p>
-            <a href="https://www.linkedin.com/in/axelgalicia/">
-                <img class="icon-land" src="/images/linkedin-icon.png" alt="linkedin" width="64" height="64">
-                <img class="icon-port" src="/images/linkedin-icon.png" alt="linkedin" width="128" height="128">
-            </a>
-        </p>
-        <p>
-            <a href="https://twitter.com/axelgaliciac">
-                <img class="icon-land" src="/images/twitter-icon.png" alt="linkedin" width="64" height="64">
-                <img class="icon-port" src="/images/twitter-icon.png" alt="linkedin" width="128" height="128">
-            </a>
-        </p>
+      <p>
+        <a href="http://github.com/axelgalicia">
+          <img
+            class="icon-land"
+            src="/images/github-icon.png"
+            alt="github"
+            width="64"
+            height="64"
+          />
+          <img
+            class="icon-port"
+            src="/images/github-icon.png"
+            alt="github"
+            width="128"
+            height="128"
+          />
+        </a>
+      </p>
+      <p>
+        <a href="https://www.linkedin.com/in/axelgalicia/">
+          <img
+            class="icon-land"
+            src="/images/linkedin-icon.png"
+            alt="linkedin"
+            width="64"
+            height="64"
+          />
+          <img
+            class="icon-port"
+            src="/images/linkedin-icon.png"
+            alt="linkedin"
+            width="128"
+            height="128"
+          />
+        </a>
+      </p>
+      <p>
+        <a href="https://twitter.com/axelgaliciac">
+          <img
+            class="icon-land"
+            src="/images/twitter-icon.png"
+            alt="linkedin"
+            width="64"
+            height="64"
+          />
+          <img
+            class="icon-port"
+            src="/images/twitter-icon.png"
+            alt="linkedin"
+            width="128"
+            height="128"
+          />
+        </a>
+      </p>
     </div>
-
 
     <div class="section first-section" id="about">
-        <h4>About me</h4>
-        <p>My name is Axel Galicia.</p>
-        <p>I am a seasoned software engineer with over 14 years of experience in designing, developing, and implementing
-            innovative web platforms that address complex challenges and provide substantial value to users and clients.
-        </p>
-        <p>As a certified Professional Scrum Master (PSM), I excel in leading agile teams, promoting a culture of
-            collaboration, effective communication, and high-quality standards throughout the development lifecycle.</p>
+      <h4>About me</h4>
+      <p>My name is Axel Galicia.</p>
+      <p>
+        I am a seasoned software engineer with over <span id="years-of-experience"></span> years of experience in
+        designing, developing, and implementing innovative web platforms that
+        address complex challenges and provide substantial value to users and
+        clients.
+      </p>
+      <p>
+        As a certified Professional Scrum Master (PSM), I excel in leading agile
+        teams, promoting a culture of collaboration, effective communication,
+        and high-quality standards throughout the development lifecycle.
+      </p>
     </div>
     <div class="section" id="experience">
-        <h4>Experience</h4>
-        <p class="position">Staff Software Engineer</p>
-        <p class="work-link"><a href="https://ledn.io">Ledn | www.ledn.io</a></p>
-        <p class="date">Oct 2021 - Current</p>
-        <p class="position">Senior Software Engineer</p>
-        <p class="work-link"><a href="https://architech.ca">Architech | www.architech.ca</a></p>
-        <p class="date">May 2018 - Sep 2021</p>
-        <p class="position">Software Developer II</p>
-        <p class="work-link"><a href="https://experian.com">Experian | www.experian.com</a></p>
-        <p class="date">Jul 2013 - Apr 2017</p>
-        <p class="position">Software Development Engineer</p>
-        <p class="work-link"><a href="https://neology.net">Neology | www.neology.net</a></p>
-        <p class="date">Jul 2010 - Apr 2013</p>
+      <h4>Experience</h4>
+      <p class="position">Staff Software Engineer</p>
+      <p class="work-link"><a href="https://ledn.io">Ledn | www.ledn.io</a></p>
+      <p class="date">Oct 2021 - Current</p>
+      <p class="position">Senior Software Engineer</p>
+      <p class="work-link">
+        <a href="https://architech.ca">Architech | www.architech.ca</a>
+      </p>
+      <p class="date">May 2018 - Sep 2021</p>
+      <p class="position">Software Developer II</p>
+      <p class="work-link">
+        <a href="https://experian.com">Experian | www.experian.com</a>
+      </p>
+      <p class="date">Jul 2013 - Apr 2017</p>
+      <p class="position">Software Development Engineer</p>
+      <p class="work-link">
+        <a href="https://neology.net">Neology | www.neology.net</a>
+      </p>
+      <p class="date">Jul 2010 - Apr 2013</p>
     </div>
     <div class="section" id="mywork">
-        <h4>Personal Projects</h4>
-        <p class="work-link"><a href="https://github.com/axelgalicia/bluetooth-distance-visualizer"> Javascript, CSS, Bluetooth | Bluetooth Distance Visualizer</a></p>
-        <p class="work-link"><a href="https://github.com/axelgalicia/react-redux-posts-app">React | Posts App</a></p>
-        <p class="work-link"><a href="https://github.com/axelgalicia/react-mobile-flash-cards">React Native | Mobile
-                Flashcards</a></p>
-        <p class="work-link"><a href="https://github.com/axelgalicia/react-app-my-reads">React | Digital Bookshelf</a>
-        </p>
-        <p class="work-link"><a href="https://github.com/axelgalicia/blockchain-notary-service">Ethereum Blockchain |
-                Star Notary Service</a></p>
+      <h4>Personal Projects</h4>
+      <p class="work-link">
+        <a href="https://github.com/axelgalicia/bluetooth-distance-visualizer">
+          Javascript, CSS, Bluetooth | Bluetooth Distance Visualizer</a
+        >
+      </p>
+      <p class="work-link">
+        <a href="https://github.com/axelgalicia/react-redux-posts-app"
+          >React | Posts App</a
+        >
+      </p>
+      <p class="work-link">
+        <a href="https://github.com/axelgalicia/react-mobile-flash-cards"
+          >React Native | Mobile Flashcards</a
+        >
+      </p>
+      <p class="work-link">
+        <a href="https://github.com/axelgalicia/react-app-my-reads"
+          >React | Digital Bookshelf</a
+        >
+      </p>
+      <p class="work-link">
+        <a href="https://github.com/axelgalicia/blockchain-notary-service"
+          >Ethereum Blockchain | Star Notary Service</a
+        >
+      </p>
     </div>
 
     <div class="section" id="courses">
-        <h4>Courses</h4>
-        <p class="work-link"><a href="https://learn.utoronto.ca/programs-courses/courses/3253-machine-learning">3253
-                Machine Learning - University of Toronto</a></p>
-        <p class="work-link"><a href="https://graduation.udacity.com/confirm/GGNWY9UP">React Nanodegree |
-                Udacity.com</a></p>
-        <p class="work-link"><a
-                href="https://www.coursera.org/account/accomplishments/certificate/43A2F3Q5F79F">Practical Machine
-                Learning | Johns Hopkins University</a></p>
-        <p class="work-link"><a href="https://www.coursera.org/account/accomplishments/certificate/K6ERCWVDBKBE">R
-                Programming | Johns Hopkins University</a></p>
+      <h4>Courses</h4>
+      <p class="work-link">
+        <a
+          href="https://learn.utoronto.ca/programs-courses/courses/3253-machine-learning"
+          >3253 Machine Learning - University of Toronto</a
+        >
+      </p>
+      <p class="work-link">
+        <a href="https://graduation.udacity.com/confirm/GGNWY9UP"
+          >React Nanodegree | Udacity.com</a
+        >
+      </p>
+      <p class="work-link">
+        <a
+          href="https://www.coursera.org/account/accomplishments/certificate/43A2F3Q5F79F"
+          >Practical Machine Learning | Johns Hopkins University</a
+        >
+      </p>
+      <p class="work-link">
+        <a
+          href="https://www.coursera.org/account/accomplishments/certificate/K6ERCWVDBKBE"
+          >R Programming | Johns Hopkins University</a
+        >
+      </p>
     </div>
 
     <div class="section" id="certifications">
-        <h4>Certifications</h4>
-        <p class="work-link"><a href="/certs/ai-intro-oxford.pdf">Introduction to Artificial Intelligence - University
-                of Oxford</a></p>
-        <p class="work-link"><a href="https://www.scrum.org/user/211346">Scrum Master Professional</a></p>
-        <p class="work-link"><a href="/certs/az_900.pdf">Microsoft AZ-900 Azure Fundamentals</a></p>
+      <h4>Certifications</h4>
+      <p class="work-link">
+        <a href="/certs/ai-intro-oxford.pdf"
+          >Introduction to Artificial Intelligence - University of Oxford</a
+        >
+      </p>
+      <p class="work-link">
+        <a href="https://www.scrum.org/user/211346"
+          >Scrum Master Professional</a
+        >
+      </p>
+      <p class="work-link">
+        <a href="/certs/az_900.pdf">Microsoft AZ-900 Azure Fundamentals</a>
+      </p>
     </div>
 
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134763815-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-134763815-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-134763815-1');
+      gtag("config", "UA-134763815-1");
     </script>
+    <script>
+      // JavaScript to add fade-in effect on scroll
+      document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll(".section");
 
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
 
-</body>
+        sections.forEach((section) => {
+          observer.observe(section);
+        });
 
+        const yearsOfExperience = getYearsOfExperience();
+        document.getElementById("years-of-experience").textContent = yearsOfExperience;
+      });
+    </script>
+  </body>
 </html>
