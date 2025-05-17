@@ -254,11 +254,14 @@
         background: #1467A6; /* Updated toggle button color to match */
         color: #ffffff;
         border: none;
-        padding: 10px 15px;
-        border-radius: 5px;
+        padding: 15px 20px; /* Increased padding for better visibility */
+        border-radius: 8px; /* Slightly rounded corners */
         cursor: pointer;
         z-index: 1100;
-        transition: background 0.3s ease;
+        transition: background 0.3s ease, transform 0.3s ease;
+        font-size: 1.2rem; /* Increased font size */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for visibility */
+        animation: bounceIn 1s ease-out;
       }
 
       .sidebar-toggle.hidden {
@@ -267,6 +270,22 @@
 
       .sidebar-toggle:hover {
         background: #005B9D; /* Slightly darker hover effect */
+        transform: scale(1.1); /* Slightly enlarge on hover */
+      }
+
+      @keyframes bounceIn {
+        0% {
+          transform: scale(0.8);
+          opacity: 0;
+        }
+        50% {
+          transform: scale(1.1);
+          opacity: 0.5;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
       }
 
       @media (max-width: 768px) {
@@ -373,7 +392,7 @@
   </head>
 
   <body onload="reloadOrientation()">
-    <button class="sidebar-toggle" id="sidebar-toggle" onclick="toggleSidebar()">☰ Menu</button>
+    <button class="sidebar-toggle" id="sidebar-toggle" onclick="toggleSidebar()">☰ Sections</button>
     <div class="sidebar" id="sidebar">
       <a href="#about"><i class="fas fa-user"></i>About</a>
       <a href="#experience"><i class="fas fa-briefcase"></i>Experience</a>
