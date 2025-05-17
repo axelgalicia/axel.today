@@ -67,13 +67,22 @@
     "I have contributed to projects utilizing JavaScript, React, and Node.js.",
     "I have been involved in software development projects using JavaScript, React, and Node.js."
   ],
-
   "hobbies": [
     "In my free time, I enjoy reading about technology and programming.",
     "I like to explore new technologies and programming languages.",
     "I enjoy learning about software development trends and innovations.",
     "I am interested in reading tech blogs and articles.",
-    "I like to keep up with the latest advancements in technology."
+    "I like to keep up with the latest advancements in technology.",
+    "I enjoy street photography, capturing people in their daily lives.",
+    "I like exploring street photography to document everyday moments.",
+    "I am passionate about street photography and storytelling through images.",
+    "I spend my free time capturing candid moments through street photography.",
+    "I enjoy combining my love for photography with observing daily life.",
+    "I find inspiration in street photography, documenting the world around me.",
+    "I like to capture the essence of daily life through street photography.",
+    "I am enthusiastic about street photography and its ability to tell stories.",
+    "I enjoy street photography as a way to connect with the world around me.",
+    "I am passionate about capturing the beauty of everyday life through photography."
   ],
   "skills": [
     "I have expertise in JavaScript, React, Node.js, AWS, Azure, Scrum Master practices, and Machine Learning.",
@@ -189,7 +198,17 @@
     "I worked on backend architectures for scalable applications.",
     "I am experienced in backend development with Node.js and Java.",
     "I implemented backend solutions for various projects.",
-    "I have expertise in creating robust backend systems."
+    "I have expertise in creating robust backend systems.",
+    "I have extensive experience working as a backend engineer.",
+    "I specialize in backend engineering, focusing on robust solutions.",
+    "I enjoy designing and implementing backend systems to solve complex problems.",
+    "I have a strong background in backend development and architecture design.",
+    "I am passionate about creating efficient and scalable backend solutions.",
+    "I like working on backend systems that power innovative applications.",
+    "I have expertise in backend engineering, ensuring system reliability and performance.",
+    "I enjoy tackling backend challenges to deliver high-quality software.",
+    "I am skilled in backend development, focusing on solving real-world problems.",
+    "I have a deep understanding of backend engineering and its role in software systems."
   ],
   "testing": [
     "I have written unit tests to cover critical scenarios.",
@@ -258,43 +277,7 @@
     "I have provided leadership in resolving technical challenges.",
     "I have guided teams to implement scalable and maintainable solutions."
   ],
-  "architecture": [
-    "I have contributed to the design and architecture of scalable systems.",
-    "I have experience in designing microservices architectures.",
-    "I have participated in architecture discussions to improve system performance.",
-    "I have designed solutions to meet business and technical requirements.",
-    "I have experience in creating architecture diagrams for complex systems.",
-    "I have worked on designing cloud-based architectures.",
-    "I have contributed to the architecture of distributed systems.",
-    "I have experience in designing secure and scalable applications.",
-    "I have participated in architecture reviews to ensure best practices.",
-    "I have designed systems to handle high traffic and large data volumes."
-  ],
-  "performance": [
-    "I have optimized application performance to reduce response times.",
-    "I have experience in profiling and improving system performance.",
-    "I have worked on optimizing database queries for better performance.",
-    "I have implemented caching strategies to enhance application speed.",
-    "I have identified and resolved performance bottlenecks in systems.",
-    "I have experience in load testing to ensure system reliability.",
-    "I have improved performance by refactoring inefficient code.",
-    "I have worked on scaling applications to handle increased traffic.",
-    "I have optimized APIs for faster response times.",
-    "I have implemented performance monitoring tools to track system metrics."
-  ],
-  "security": [
-    "I have implemented security measures to protect sensitive data.",
-    "I have experience in securing APIs against unauthorized access.",
-    "I have worked on encrypting data to ensure confidentiality.",
-    "I have implemented authentication and authorization mechanisms.",
-    "I have experience in conducting security audits for applications.",
-    "I have worked on securing cloud-based applications.",
-    "I have implemented best practices for secure software development.",
-    "I have experience in mitigating security vulnerabilities in systems.",
-    "I have worked on securing applications against common threats like SQL injection.",
-    "I have implemented role-based access control for secure data access."
-  ],
-  "collaboration": [
+  "teamwork": [
     "I have collaborated with cross-functional teams to deliver projects.",
     "I have worked closely with product managers to define requirements.",
     "I have collaborated with designers to create user-friendly interfaces.",
@@ -305,6 +288,30 @@
     "I have collaborated with remote teams to deliver software solutions.",
     "I have worked with data scientists to integrate machine learning models.",
     "I have collaborated with frontend and backend teams to build cohesive applications."
+  ],
+  "communication": [
+    "I have strong communication skills to convey technical concepts to non-technical stakeholders.",
+    "I have experience presenting project updates to leadership teams.",
+    "I am skilled in writing clear and concise technical documentation.",
+    "I have facilitated team meetings to ensure alignment on project goals.",
+    "I have provided feedback to team members to improve collaboration.",
+    "I have conducted training sessions to share knowledge with the team.",
+    "I have experience in resolving conflicts through effective communication.",
+    "I have worked on improving team communication to enhance productivity.",
+    "I have participated in client meetings to gather requirements and provide updates.",
+    "I have communicated project risks and mitigation strategies to stakeholders."
+  ],
+  "problem-solving": [
+    "I have resolved complex technical challenges in projects.",
+    "I have worked on identifying and fixing system issues.",
+    "I have implemented solutions to address performance bottlenecks.",
+    "I have resolved technical problems to meet project deadlines.",
+    "I have worked on troubleshooting and debugging applications.",
+    "I have implemented solutions to improve system reliability.",
+    "I have resolved issues to ensure seamless user experience.",
+    "I have worked on solving problems to optimize workflows.",
+    "I have implemented solutions to address customer pain points.",
+    "I have resolved challenges to improve system performance."
   ],
   "innovation": [
     "I have introduced new technologies to improve system efficiency.",
@@ -318,6 +325,54 @@
     "I have worked on creating innovative solutions for data processing.",
     "I have introduced new methodologies to improve project outcomes."
   ],
+  "adaptability": [
+    "I have adapted to changing project requirements to meet deadlines.",
+    "I have worked in dynamic environments to deliver high-quality solutions.",
+    "I am skilled in quickly learning new technologies to meet project needs.",
+    "I have adjusted to new team structures to ensure project success.",
+    "I have adapted to remote and hybrid work environments effectively.",
+    "I have worked on projects with evolving priorities and timelines.",
+    "I have demonstrated flexibility in handling unexpected challenges.",
+    "I have adapted to new tools and processes to improve efficiency.",
+    "I have worked on cross-functional teams to adapt to diverse perspectives.",
+    "I have adjusted to feedback to improve project outcomes."
+  ],
+  "time management": [
+    "I have prioritized tasks to meet project deadlines.",
+    "I have managed multiple projects simultaneously to ensure timely delivery.",
+    "I am skilled in creating schedules to optimize team productivity.",
+    "I have worked on breaking down tasks to manage time effectively.",
+    "I have used project management tools to track progress and deadlines.",
+    "I have allocated resources efficiently to meet project goals.",
+    "I have managed time effectively to balance work and personal commitments.",
+    "I have worked on setting realistic timelines for project deliverables.",
+    "I have adjusted schedules to accommodate changing priorities.",
+    "I have ensured timely communication to keep projects on track."
+  ],
+  "decision-making": [
+    "I have made data-driven decisions to improve system performance.",
+    "I have evaluated trade-offs to select the best technical solutions.",
+    "I have worked on making decisions to resolve project challenges.",
+    "I have collaborated with stakeholders to make informed decisions.",
+    "I have used analytical skills to make decisions under pressure.",
+    "I have made decisions to prioritize tasks based on project goals.",
+    "I have worked on making decisions to optimize resource allocation.",
+    "I have used feedback to make decisions that improve team performance.",
+    "I have made decisions to align technical solutions with business objectives.",
+    "I have worked on making decisions to ensure project success."
+  ],
+  "conflict resolution": [
+    "I have resolved conflicts between team members to improve collaboration.",
+    "I have worked on mediating disputes to maintain team harmony.",
+    "I have used communication skills to address conflicts effectively.",
+    "I have resolved conflicts by finding common ground between stakeholders.",
+    "I have worked on addressing conflicts to ensure project progress.",
+    "I have used active listening to resolve conflicts in team meetings.",
+    "I have mediated conflicts to align team members on project goals.",
+    "I have worked on resolving conflicts to improve team dynamics.",
+    "I have addressed conflicts to ensure a positive work environment.",
+    "I have used negotiation skills to resolve conflicts between departments."
+  ],
   "mentorship": [
     "I have mentored junior developers to improve their coding skills.",
     "I have provided guidance to team members on best practices.",
@@ -330,40 +385,28 @@
     "I have provided support to team members in achieving their goals.",
     "I have helped team members develop their career paths."
   ],
-  "automation": [
-    "I have automated processes to reduce manual effort.",
-    "I have implemented automation tools to improve efficiency.",
-    "I have worked on automating deployment pipelines.",
-    "I have automated repetitive tasks to save time.",
-    "I have implemented automation scripts for data processing.",
-    "I have worked on automating testing processes.",
-    "I have introduced automation to improve system reliability.",
-    "I have implemented tools to automate monitoring and alerts.",
-    "I have worked on automating workflows to enhance productivity.",
-    "I have implemented automation to streamline business processes."
+  "personal_projects": [
+    "I enjoy creating programming projects to learn new skills.",
+    "I like working on personal programming projects to expand my knowledge.",
+    "I am passionate about building my own projects to explore different technologies.",
+    "I spend my free time developing programming projects to enhance my skills.",
+    "I enjoy experimenting with new ideas through personal programming projects.",
+    "I like to challenge myself by creating unique programming solutions.",
+    "I am enthusiastic about learning through hands-on programming projects.",
+    "I find joy in building projects that solve real-world problems.",
+    "I enjoy combining creativity and technology in my personal programming projects.",
+    "I am passionate about using programming projects as a way to grow my expertise."
   ],
-  "scalability": [
-    "I have designed systems to scale with increasing traffic.",
-    "I have implemented solutions to handle high data volumes.",
-    "I have worked on scaling applications to meet user demands.",
-    "I have optimized systems for horizontal and vertical scaling.",
-    "I have implemented load balancing to improve scalability.",
-    "I have worked on designing scalable architectures.",
-    "I have implemented caching strategies to enhance scalability.",
-    "I have worked on scaling databases to handle large datasets.",
-    "I have optimized APIs for scalable performance.",
-    "I have implemented solutions to ensure system scalability."
-  ],
-  "problem-solving": [
-    "I have resolved complex technical challenges in projects.",
-    "I have worked on identifying and fixing system issues.",
-    "I have implemented solutions to address performance bottlenecks.",
-    "I have resolved technical problems to meet project deadlines.",
-    "I have worked on troubleshooting and debugging applications.",
-    "I have implemented solutions to improve system reliability.",
-    "I have resolved issues to ensure seamless user experience.",
-    "I have worked on solving problems to optimize workflows.",
-    "I have implemented solutions to address customer pain points.",
-    "I have resolved challenges to improve system performance."
+  "software_architecture": [
+    "I enjoy designing software architectures to solve current problems.",
+    "I am passionate about creating innovative software architectures.",
+    "I specialize in designing architectures that address modern challenges.",
+    "I like working on software architectures that drive impactful solutions.",
+    "I have experience designing architectures to meet complex requirements.",
+    "I enjoy exploring new approaches to software architecture design.",
+    "I am skilled in creating architectures that balance scalability and performance.",
+    "I like to design software systems that solve real-world problems effectively.",
+    "I am enthusiastic about architecture design and its impact on software quality.",
+    "I have a strong interest in designing architectures that enable innovation."
   ]
 }
