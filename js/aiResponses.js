@@ -5,4 +5,6 @@ const aiResponses = {
   default: "I'm here to answer your questions about my experience. Please ask!",
 };
 
-export default aiResponses;
+export {
+  aiResponses,
+}
