@@ -1,4 +1,5 @@
 let contextExperience = {};
+let generator;
 
 fetch("./js/context-experience.json")
   .then((response) => {
@@ -14,7 +15,7 @@ fetch("./js/context-experience.json")
     console.error("Error loading context-experience.json:", error);
   });
 
-export function initializeChat() {
+export const initializeChat = async () => {
   console.log("Chat initialized");
   const chatMessages = document.getElementById("chat-messages");
   const chatInput = document.getElementById("chat-input");
@@ -34,21 +35,37 @@ export function initializeChat() {
       addMessage(userMessage, "user");
       chatInput.value = "";
 
-      const section = Object.keys(contextExperience).find((key) =>
-        userMessage.toLowerCase().includes(key)
-      );
+      const words = userMessage.toLowerCase().split(/\s+/);
+      let sectionKey = null;
+      const synonyms = contextExperience.synonyms;
 
-      console.log({
-        section,
-      })
+      for (const word of words) {
+        sectionKey = Object.keys(synonyms).find((key) => {
+          const isEqual = synonyms[key].some((synonym) => {
+            const wordsSynonyms = synonym.toLowerCase().split(/\s+/);
+            return wordsSynonyms.some((wordSynonym) => {
+              return wordSynonym.toLowerCase() === word;
+            });
+          });
+          return isEqual;
+        });
+        if (sectionKey) break;
+      }
 
-      const answersAvailable = section ? section.length : 0;
-      const response = answersAvailable === 0 ?
-        contextExperience.default[Math.floor(Math.random() * contextExperience.default.length)] :
-        contextExperience[section][Math.floor(Math.random() * contextExperience[section].length)];
+      const defaultResponseSection = contextExperience.sections.default;
+      const sections = contextExperience.sections;
 
+      let response;
 
-      const delay = Math.random() * (1000 - 300) + 300; // Random delay between 300ms and 1s
+      if (sectionKey && sections[sectionKey]) {
+        const answers = sections[sectionKey];
+        response = answers[Math.floor(Math.random() * answers.length)];
+      }
+
+      response = response ||
+        defaultResponseSection[Math.floor(Math.random() * defaultResponseSection.length)];
+
+      const delay = Math.random() * (1000 - 700) + 700; // Random delay between 300ms and 1s
       setTimeout(() => addMessage(response, "ai"), delay);
     }
   });
