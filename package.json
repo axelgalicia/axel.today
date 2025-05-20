@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "release": "node js/bumpVersion.js",
+    "release:patch": "node js/bumpVersion.js patch",
+    "release:minor": "node js/bumpVersion.js minor",
+    "release:major": "node js/bumpVersion.js major"
+  }
+}

@@ -1,5 +1,4 @@
 let contextExperience = {};
-let generator;
 
 fetch("./js/context-experience.json")
   .then((response) => {
