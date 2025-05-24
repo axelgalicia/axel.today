@@ -385,6 +385,13 @@
       "I aspire to work in roles that challenge me and enhance my technical skills.",
       "My goal is to make a meaningful impact through software development.",
       "I aim to achieve excellence in software engineering and leadership."
+    ],
+    "job_roles": [
+      "I am looking for roles in software engineering, particularly in backend development.",
+      "I am interested in positions that involve cloud computing and microservices.",
+      "I prefer roles that focus on innovation and problem-solving in software projects.",
+      "I am seeking opportunities in agile environments that promote collaboration.",
+      "I value positions that leverage my expertise in JavaScript and cloud technologies."
     ]
   },
   "synonyms": {
@@ -557,7 +564,7 @@
       "professional background",
       "career overview"
     ],
-    "experience_summary": [
+    "experience": [
       "work experience",
       "career experience",
       "job history",
@@ -784,6 +791,18 @@
       "employment preferences",
       "professional preferences",
       "job aspirations"
+    ],
+    "availability": [
+      "job availability",
+      "work availability",
+      "employment availability",
+      "professional availability",
+      "career availability",
+      "job readiness",
+      "work readiness",
+      "employment readiness",
+      "professional readiness",
+      "career readiness"
     ]
   }
 }
